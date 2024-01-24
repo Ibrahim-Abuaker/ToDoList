@@ -13,14 +13,37 @@
             <input 
             type="text"
             id="new-task-input"
-            placeholder="What do you have planned?"/>
+            placeholder="Any tasks to do?"/>
             <input
             type="submit"
             value="Add Task"
-            id="new-task-submit"
-            >
+            id="new-task-submit"/>
         </form>
     </header>
+
+<main>
+    <section class="task-list">
+<h2>Tasks</h2>
+<div class="task">
+    <div class="content">
+        <input 
+        type="text"
+        class="text"
+        value="my shiny task"
+        readonly
+        />
+    </div>
+    <div class="actions">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+        <button class="done">Done</button>
+        <!--&#9989-->
+    </div>
+</div>
+
+    </section>
+</main>
+
     <script defer src="script.js"></script>
 </body>
 </html>
