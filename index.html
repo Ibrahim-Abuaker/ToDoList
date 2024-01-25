@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List</title>
+    <title>Hulkmania To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./Favicon.webp">
 </head>
 <body>
+
     <header>
-        <h1>To Do List</h1>
+        <h1>Hulkmania To Do List</h1>
         <form id="new-task-form">
             <input 
                 type="text"
                 id="new-task-input"
-                placeholder="Any tasks to do?"/>
+                placeholder="What's on your plate, brother?"/>
             <input
                 type="submit"
-                value="Add Task"
+                value="Do it!"
                 id="new-task-submit"/>
         </form>
     </header>
@@ -25,25 +27,16 @@
     <section class="task-list">
         <h2>To Dos</h2>
         <div id="tasks">
-            <div class="task">
-                <div class="content">
-                    <input 
-                        type="text"
-                        class="text"
-                        value="my shiny task"
-                        readonly
-                        
-                    />
-                </div>
             
-                <div class="actions">
-                    <button class="edit">Edit</button>
-                    <button class="delete">Delete</button>
-                    <button class="done">Done</button>
-                </div>
-            </div>
         </div>
     </section>
+<div id="goodJob" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="./Hulk_Hogan_2.webp">
+        <p>Good Job: Fear no man, no beast or evil, brother!</p>
+    </div>
+</div>
 </main>
 
     <script defer src="script.js"></script>
