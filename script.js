@@ -66,10 +66,26 @@ form.addEventListener('submit', (e) => {
             list_el.removeChild(task_el);
         })
         
+        const span = document.getElementsByClassName("close")[0];
         task_done_el.addEventListener('click', () => {
             task_input_el.style.setProperty("text-decoration", "line-through");
+            document.getElementById("goodJob").style.display = "block";
+            span.onclick = function () {
+                document.getElementById("goodJob").style.display = "none"
+            }
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("goodJob")) {
+                    document.getElementById("goodJob").style.display = "none";
+                }
+            }
 
         })
+    
+    
+    
+    
+    
+    
     }
     
    
